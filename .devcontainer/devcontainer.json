@@ -1,0 +1,19 @@
+{
+    // A human-readable name for the container
+    "name": "Nextflow Codespace",
+    // Tell Codespaces to pull this image directly from Docker Hub
+    "image": "docker.io/nextflow/nextflow:latest",
+    // (Optional) Any ports your workflow exposes
+    "forwardPorts": [8080],
+    // (Optional) VS Code settings you want baked in
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    // (Optional) Extensions to install automatically
+    "extensions": [
+      "njpwerner.autodocstring"
+    ],
+    // (Optional) A command to run after the container is created
+    "postCreateCommand": "nextflow run main.nf"
+}
+  
